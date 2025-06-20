@@ -5,6 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Bio | Herlock Rahimi</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .tile-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .tile {
+      flex: 1 1 250px;
+      background-color: #dceeff;
+      border: 1px solid #aad4f4;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      color: #003d66;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+    }
+    .tile:hover {
+      transform: scale(1.03);
+      background-color: #c6e8ff;
+    }
+    .tile h3 {
+      margin: 0 0 10px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -17,6 +45,7 @@
       <a href="assets/CV.pdf">📄 CV</a>
     </div>
   </header>
+
   <nav class="navbar">
     <a href="index.html">Home</a>
     <a href="bio.html">Bio</a>
@@ -26,6 +55,30 @@
     <a href="projects.html">Projects</a>
     <a href="media.html">Media</a>
   </nav>
-  <main><section><h2>Bio</h2><p>PhD student at Yale. BSc in CE and Math from Sharif University. Research in optimization, ML, RL, information theory.</p></section></main>
+
+  <main>
+    <section>
+      <h2>Bio</h2>
+      <p>PhD student at Yale. BSc in CE and Math from Sharif University. Research in optimization, ML, RL, information theory.</p>
+    </section>
+
+    <section>
+      <h2>Research Interests</h2>
+      <div class="tile-grid">
+        <a href="federated.html" class="tile">
+          <h3>Federated Learning</h3>
+          <p>Decentralized and privacy-preserving model training across clients.</p>
+        </a>
+        <a href="risk.html" class="tile">
+          <h3>Risk-Averse Optimization</h3>
+          <p>Robust decision-making under uncertainty using CVaR and DRO techniques.</p>
+        </a>
+        <a href="geometry.html" class="tile">
+          <h3>Optimal Transport & Info Geometry</h3>
+          <p>Differential-geometric tools for statistical learning and transport models.</p>
+        </a>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
