@@ -5,7 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Bio | Herlock Rahimi</title>
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Modern font: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
     .tile-grid {
       display: flex;
       flex-wrap: wrap;
@@ -34,6 +41,7 @@
     }
   </style>
 </head>
+
 <body>
   <header>
     <img src="assets/profile.jpeg" class="profile" />
@@ -41,19 +49,17 @@
     <p>PhD Student in Electrical and Computer Engineering, Yale University</p>
     <div class="icons">
       <a href="mailto:herlock.rahimi@yale.edu">📧</a>
-      <a href="https://github.com/HerlockSholmesm">💻 GitHub</a>
-      <a href="assets/CV.pdf">📄 CV</a>
+      <a href="https://github.com/HerlockSholmesm" target="_blank">💻 GitHub</a>
+      <a href="assets/CV.pdf" target="_blank">📄 CV</a>
     </div>
   </header>
 
   <nav class="navbar">
-    <a href="index.html">Home</a>
-    <a href="bio.html">Bio</a>
-    <a href="news.html">News</a>
+    <a href="bio.html" class="active">Bio</a>
     <a href="publications.html">Publications</a>
+    <a href="news.html">News</a>
+    <a href="service.html">Service</a>
     <a href="teaching.html">Teaching</a>
-    <a href="projects.html">Projects</a>
-    <a href="media.html">Media</a>
   </nav>
 
   <main>
@@ -63,20 +69,20 @@
         I am a PhD student in Electrical and Computer Engineering at Yale University,
         where I am advised by Professors Dionysis Kalogerias and Amin Karbasi.
         My research lies at the intersection of machine learning, optimization,
-        information theory, and reinforcement learning — with recent focus on federated learning,
-        risk-aware optimization, and information geometry.
+        information theory, and reinforcement learning — with a recent focus on 
+        federated learning, risk-aware optimization, and information geometry.
       </p>
       <p>
         Prior to Yale, I received dual Bachelor of Science degrees in
         <strong>Computer Engineering</strong> and <strong>Mathematics</strong> from
         <em>Sharif University of Technology</em>. During my undergraduate studies,
-        I was a Head Teaching Assistant for several core courses and actively involved in theoretical research
-        on the geometry of deep learning.
+        I served as Head Teaching Assistant for several core courses and conducted
+        theoretical research on the geometry of deep learning.
       </p>
       <p>
-        I have also been a silver medalist in the <strong>Iranian National Mathematical Olympiad</strong>,
-        which shaped my interest in mathematical rigor and abstraction — a theme that continues
-        to influence both my research and teaching today.
+        I am also a silver medalist in the <strong>Iranian National Mathematical Olympiad</strong>,
+        which shaped my interest in mathematical rigor and abstraction — themes that continue to
+        influence both my research and teaching today.
       </p>
     </section>
 
@@ -92,7 +98,7 @@
           <p>Robust decision-making under uncertainty using CVaR and DRO techniques.</p>
         </a>
         <a href="geometry.html" class="tile">
-          <h3>Optimal Transport & Info Geometry</h3>
+          <h3>Optimal Transport & Information Geometry</h3>
           <p>Differential-geometric tools for statistical learning and transport models.</p>
         </a>
       </div>
@@ -101,22 +107,21 @@
     <section>
       <h2>Job Interests</h2>
       <p>
-        I am currently open to exciting research and industry opportunities in areas related to
-        <strong>Risk-Averse Optimization</strong>, <strong>Optimal Transport</strong>, and
-        <strong>Quantitative Research</strong>. My background spans both theoretical and applied aspects of these fields,
-        with a strong focus on machine learning, stochastic optimization, and financial modeling.
+        I am currently open to research and industry opportunities in 
+        <strong>Risk-Averse Optimization</strong>, <strong>Optimal Transport</strong>, and 
+        <strong>Quantitative Research</strong>. My background bridges theoretical and applied perspectives 
+        on machine learning, stochastic optimization, and financial modeling.
       </p>
       <p>
-        In particular, I have been actively exploring quantitative research directions through experiments and modeling efforts,
-        the results of which can be found here:
+        Selected quantitative research projects can be found here: 
         <a href="https://herlocksholmesm.github.io/QuantPortfolio/problem.html" target="_blank">
           Quantitative Research Projects ↗
         </a>
       </p>
       <p>
-        I am also interested in voluntary teaching positions, especially in <strong>Statistics</strong> and 
-        <strong>Mathematical Olympiad training</strong>. Sharing mathematical insights and mentoring motivated students has 
-        always been a rewarding part of my academic journey.
+        I also enjoy voluntary teaching, particularly in <strong>Statistics</strong> and 
+        <strong>Mathematical Olympiad training</strong>, as part of my commitment to mentoring the next generation 
+        of researchers and problem solvers.
       </p>
     </section>
   </main>
