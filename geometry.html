@@ -1,10 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Optimal Transport & Information Geometry | Herlock Rahimi</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Service | Herlock Rahimi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #0d1117;
+      color: #c9d1d9;
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      background-color: #161b22;
+      padding: 25px 15px;
+      border-bottom: 1px solid #30363d;
+    }
+
+    header h1 {
+      color: #58a6ff;
+      margin: 10px 0;
+      font-size: 26px;
+      letter-spacing: 0.5px;
+    }
+
+    header p {
+      color: #8b949e;
+      margin: 0;
+      font-size: 15px;
+    }
+
+    nav {
+      text-align: center;
+      background-color: #0d1117;
+      padding: 15px 0;
+      border-bottom: 1px solid #21262d;
+    }
+
+    nav a {
+      color: #9ecbff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      font-size: 15px;
+    }
+
+    nav a:hover, nav a.active {
+      color: #58a6ff;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      color: #58a6ff;
+      font-weight: 600;
+      border-bottom: 1px dotted #58a6ff;
+      padding-bottom: 6px;
+      margin-top: 40px;
+    }
+
+    h3 {
+      color: #c9d1d9;
+      margin-top: 30px;
+      font-size: 18px;
+    }
+
+    p {
+      color: #b1bac4;
+      margin-top: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin-top: 10px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    li a {
+      color: #9ecbff;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      color: #58a6ff;
+      text-decoration: underline;
+    }
+
+    .item-block {
+      margin-top: 12px;
+      margin-bottom: 25px;
+      padding-left: 10px;
+      border-left: 2px solid #30363d;
+    }
+
+    .item-block strong {
+      color: #c9d1d9;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      padding: 6px 8px;
+      text-align: left;
+    }
+
+    th {
+      color: #79c0ff;
+      font-weight: 600;
+      border-bottom: 1px solid #30363d;
+    }
+
+    td {
+      border-bottom: 1px solid #21262d;
+    }
+
+    .right {
+      text-align: right;
+      color: #9ecbff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #8b949e;
+      font-size: 13px;
+      border-top: 1px solid #21262d;
+      margin-top: 50px;
+    }
+  </style>
 </head>
 <body>
   <header>
