@@ -15,18 +15,21 @@
 </head>
 <body>
   <!-- Header with pinned avatar -->
-  <header class="site-header">
-    <div class="profile-wrap">
-      <img src="assets/profile.jpeg" alt="Portrait of Herlock Rahimi" class="profile" />
-    </div>
+  <header class="site-header avatar-inline">
+    <div class="container identity" aria-label="Intro">
+      <div>
+        <h1>Herlock Rahimi</h1>
+        <p>PhD Student in Electrical &amp; Computer Engineering, Yale University</p>
+        <div class="icons" aria-label="Quick links">
+          <a href="mailto:herlock.rahimi@yale.edu" aria-label="Email">📧 Email</a>
+          <a href="https://github.com/HerlockSholmesm" target="_blank" rel="noopener" aria-label="GitHub">💻 GitHub</a>
+          <a href="assets/CV.pdf" target="_blank" rel="noopener" aria-label="CV">📄 CV</a>
+        </div>
+      </div>
 
-    <div class="container identity">
-      <h1>Herlock Rahimi</h1>
-      <p>PhD Student in Electrical &amp; Computer Engineering, Yale University</p>
-      <div class="icons">
-        <a href="mailto:herlock.rahimi@yale.edu">📧 Email</a>
-        <a href="https://github.com/HerlockSholmesm" target="_blank" rel="noopener">💻 GitHub</a>
-        <a href="assets/CV.pdf" target="_blank" rel="noopener">📄 CV</a>
+      <!-- Avatar sits to the RIGHT, flush with container edge -->
+      <div class="profile-wrap">
+        <img src="assets/profile.jpeg" alt="Portrait of Herlock Rahimi" class="profile" />
       </div>
     </div>
   </header>
