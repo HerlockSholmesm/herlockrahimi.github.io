@@ -2,185 +2,134 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Service | Herlock Rahimi</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#0d1117" />
+  <title>Publications | Herlock Rahimi</title>
 
-  <style>
-    body {
-      background-color: #0d1117;
-      color: #c9d1d9;
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      line-height: 1.6;
-    }
-
-    header {
-      text-align: center;
-      background-color: #161b22;
-      padding: 25px 15px;
-      border-bottom: 1px solid #30363d;
-    }
-
-    header h1 {
-      color: #58a6ff;
-      margin: 10px 0;
-      font-size: 26px;
-      letter-spacing: 0.5px;
-    }
-
-    header p {
-      color: #8b949e;
-      margin: 0;
-      font-size: 15px;
-    }
-
-    nav {
-      text-align: center;
-      background-color: #0d1117;
-      padding: 15px 0;
-      border-bottom: 1px solid #21262d;
-    }
-
-    nav a {
-      color: #9ecbff;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: 500;
-      font-size: 15px;
-    }
-
-    nav a:hover, nav a.active {
-      color: #58a6ff;
-    }
-
-    main {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    h2 {
-      color: #58a6ff;
-      font-weight: 600;
-      border-bottom: 1px dotted #58a6ff;
-      padding-bottom: 6px;
-      margin-top: 40px;
-    }
-
-    h3 {
-      color: #c9d1d9;
-      margin-top: 30px;
-      font-size: 18px;
-    }
-
-    p {
-      color: #b1bac4;
-      margin-top: 10px;
-    }
-
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-      margin-top: 10px;
-    }
-
-    li {
-      margin-bottom: 6px;
-    }
-
-    li a {
-      color: #9ecbff;
-      text-decoration: none;
-    }
-
-    li a:hover {
-      color: #58a6ff;
-      text-decoration: underline;
-    }
-
-    .item-block {
-      margin-top: 12px;
-      margin-bottom: 25px;
-      padding-left: 10px;
-      border-left: 2px solid #30363d;
-    }
-
-    .item-block strong {
-      color: #c9d1d9;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 10px;
-    }
-
-    th, td {
-      padding: 6px 8px;
-      text-align: left;
-    }
-
-    th {
-      color: #79c0ff;
-      font-weight: 600;
-      border-bottom: 1px solid #30363d;
-    }
-
-    td {
-      border-bottom: 1px solid #21262d;
-    }
-
-    .right {
-      text-align: right;
-      color: #9ecbff;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      color: #8b949e;
-      font-size: 13px;
-      border-top: 1px solid #21262d;
-      margin-top: 50px;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <img src="assets/profile.jpeg" class="profile" />
-    <h1>Herlock Rahimi</h1>
-    <p>PhD Student in Electrical and Computer Engineering, Yale University</p>
-    <div class="icons">
-      <a href="mailto:herlock.rahimi@yale.edu">📧</a>
-      <a href="https://github.com/HerlockSholmesm">💻 GitHub</a>
-      <a href="assets/CV.pdf">📄 CV</a>
+  <!-- Header with pinned avatar -->
+  <header class="site-header">
+    <div class="profile-wrap">
+      <img src="assets/profile.jpeg" alt="Portrait of Herlock Rahimi" class="profile" />
+    </div>
+
+    <div class="container identity">
+      <h1>Herlock Rahimi</h1>
+      <p>PhD Student in Electrical &amp; Computer Engineering, Yale University</p>
+      <div class="icons">
+        <a href="mailto:herlock.rahimi@yale.edu">📧 Email</a>
+        <a href="https://github.com/HerlockSholmesm" target="_blank" rel="noopener">💻 GitHub</a>
+        <a href="assets/CV.pdf" target="_blank" rel="noopener">📄 CV</a>
+      </div>
     </div>
   </header>
-  <nav class="navbar">
-    <a href="index.html">Home</a>
-    <a href="bio.html">Bio</a>
-    <a href="news.html">News</a>
-    <a href="publications.html">Publications</a>
-    <a href="teaching.html">Teaching</a>
-    <a href="projects.html">Projects</a>
-    <a href="media.html">Media</a>
+
+  <!-- Minimal Nav (order you requested) -->
+  <nav class="navbar" aria-label="Primary">
+    <div class="container nav">
+      <a href="publications.html" class="active">Publications</a>
+      <a href="news.html">News</a>
+      <a href="service.html">Service</a>
+      <a href="bio.html">Bio</a>
+      <a href="teaching.html">Teaching</a>
+    </div>
   </nav>
-  <main>
-    <section>
-      <h2>Publications</h2>
-      <ul>
-        <li>
-          <strong><a href="https://arxiv.org/abs/2507.10325" target="_blank">Convergence of Agnostic Federated Averaging</a></strong><br />
-          <em>Herlock (SeyedAbolfazl) Rahimi, Dionysis Kalogerias</em><br />
-          Submitted to CAMSAP, 2025.  
-          <span style="display:block; margin-top:0.2em;">
-            We establish convergence guarantees for agnostic FedAvg under general, non-uniform, and unknown client availability—without assuming participation distributions—and demonstrate its empirical superiority over weighted FedAvg.
-          </span>
+
+  <main class="container" id="main">
+    <section aria-labelledby="pubs">
+      <h2 id="pubs">Publications</h2>
+
+      <!-- optional controls area (future filters, etc.) -->
+      <div class="pub-controls" aria-hidden="true">
+        <span class="badge">Updated</span>
+        <span class="badge">Dark mode</span>
+      </div>
+
+      <ul class="pub-list">
+        <!-- 2025 -->
+        <li class="year-divider">2025</li>
+
+        <li class="pub-item">
+          <h3 class="pub-title">
+            <a href="https://arxiv.org/abs/2507.10325" target="_blank" rel="noopener">
+              Convergence of Agnostic Federated Averaging
+            </a>
+          </h3>
+          <p class="pub-authors">
+            <strong>Herlock (SeyedAbolfazl) Rahimi</strong>, Dionysis Kalogerias
+          </p>
+          <div class="pub-meta">
+            <span class="badge">Preprint</span>
+            <span class="badge">Submitted: CAMSAP&nbsp;2025</span>
+            <span class="badge">FL · Theory</span>
+            <span class="badge">Rate: O(1/√T)</span>
+          </div>
+          <div class="pub-links">
+            <a class="pub-link" href="https://arxiv.org/abs/2507.10325" target="_blank" rel="noopener">arXiv</a>
+            <a class="pub-link" href="https://doi.org/10.48550/arXiv.2507.10325" target="_blank" rel="noopener">DOI</a>
+          </div>
+          <p class="pub-note">
+            We provide convergence guarantees for agnostic FedAvg under general, non-uniform, unknown client participation—without assuming participation distributions—and show empirical advantages over weighted FedAvg.
+          </p>
         </li>
-        <li>LLM Reasoning with Prof. Karbasi</li>
-        <li>Risk-Averse FL</li>
-        <li>GNNs for Histopathology</li>
+
+        <li class="pub-item">
+          <h3 class="pub-title">
+            <a href="https://arxiv.org/abs/2509.14444" target="_blank" rel="noopener">
+              FedAVOT: Exact Distribution Alignment in Federated Learning via Masked Optimal Transport
+            </a>
+          </h3>
+          <p class="pub-authors">
+            <strong>Herlock (SeyedAbolfazl) Rahimi</strong>, Dionysis Kalogerias
+          </p>
+          <div class="pub-meta">
+            <span class="badge">Preprint</span>
+            <span class="badge">ICASSP (submitted)</span>
+            <span class="badge">FL · Optimal Transport</span>
+            <span class="badge">Rate: O(1/√T)</span>
+          </div>
+          <div class="pub-links">
+            <a class="pub-link" href="https://arxiv.org/abs/2509.14444" target="_blank" rel="noopener">arXiv</a>
+            <a class="pub-link" href="https://doi.org/10.48550/arXiv.2509.14444" target="_blank" rel="noopener">DOI</a>
+          </div>
+          <p class="pub-note">
+            Proposes transport-based aggregation to align availability and importance distributions via masked OT and Sinkhorn scaling; proves convergence under nonsmooth convex settings and strong empirical gains in low-availability regimes.
+          </p>
+        </li>
+
+        <li class="pub-item">
+          <h3 class="pub-title">
+            <a href="https://arxiv.org/abs/2509.25334" target="_blank" rel="noopener">
+              Uncertainty-Aware Generative Oversampling Using an Entropy-Guided Conditional Variational Autoencoder
+            </a>
+          </h3>
+          <p class="pub-authors">
+            Amirhossein Zare, Amirhessam Zare, Parmida Sadat Pezeshki,
+            <strong>Herlock (SeyedAbolfazl) Rahimi</strong>, Ali Ebrahimi,
+            Ignacio Vázquez-García, Leo Anthony Celi
+          </p>
+          <div class="pub-meta">
+            <span class="badge">Preprint</span>
+            <span class="badge">ML · Biomedical</span>
+            <span class="badge">CVAEs · Class Imbalance</span>
+          </div>
+          <div class="pub-links">
+            <a class="pub-link" href="https://arxiv.org/abs/2509.25334" target="_blank" rel="noopener">arXiv</a>
+            <a class="pub-link" href="https://doi.org/10.48550/arXiv.2509.25334" target="_blank" rel="noopener">DOI</a>
+          </div>
+          <p class="pub-note">
+            Introduces entropy-guided weighting and sampling for CVAE oversampling (LEO-CVAE), boosting performance on ADNI and TCGA lung cancer datasets versus SMOTE-style and generative baselines.
+          </p>
+        </li>
+
+        <!-- Add more items above this comment as needed -->
       </ul>
     </section>
   </main>
