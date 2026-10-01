@@ -1,0 +1,97 @@
+{
+  "scholar_user": "YnERbZYAAAAJ",
+  "profile_url": "https://scholar.google.com/citations?user=YnERbZYAAAAJ&hl=en",
+  "source": "scholar",
+  "updated": "2026-10-01",
+  "stats": {
+    "citations": 11,
+    "h_index": 2,
+    "i10_index": 0
+  },
+  "publications": [
+    {
+      "title": "FedeRage: Provably Convergent Agnostic Federated Learning under General Client Drift",
+      "authors": "Herlock Rahimi, Dionysis Kalogerias",
+      "venue": "arXiv preprint arXiv:2609.21057",
+      "year": 2026,
+      "citations": 0,
+      "cited_by_url": null,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YnERbZYAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=YnERbZYAAAAJ:IjCSPb-OGe4C",
+      "arxiv_id": "2609.21057",
+      "url": "https://arxiv.org/abs/2609.21057",
+      "pdf_url": "https://arxiv.org/pdf/2609.21057"
+    },
+    {
+      "title": "Constrained Learning with Universally Learnable Concept Classes",
+      "authors": "Herlock SeyedAbolfazl Rahimi, Spyridon Pougkakiotis, Dionysis Kalogerias",
+      "venue": "arXiv preprint arXiv:2608.08414",
+      "year": 2026,
+      "citations": 0,
+      "cited_by_url": null,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YnERbZYAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=YnERbZYAAAAJ:qjMakFHDy7sC",
+      "arxiv_id": "2608.08414",
+      "url": "https://arxiv.org/abs/2608.08414",
+      "pdf_url": "https://arxiv.org/pdf/2608.08414"
+    },
+    {
+      "title": "Causal Longitudinal Prior-Fitted Networks for Counterfactual Outcome Prediction",
+      "authors": "Amirhossein Zare, Amirhessam Zare, Herlock Rahimi, Reza Salarikia, Mohammad Kashkooli",
+      "venue": "arXiv preprint arXiv:2606.05797",
+      "year": 2026,
+      "citations": 2,
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16296288784437262403",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YnERbZYAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=YnERbZYAAAAJ:2osOgNQ5qMEC",
+      "arxiv_id": "2606.05797",
+      "url": "https://arxiv.org/abs/2606.05797",
+      "pdf_url": "https://arxiv.org/pdf/2606.05797"
+    },
+    {
+      "title": "Weighted Stochastic Differential Equation to Implement Wasserstein-Fisher-Rao Gradient Flow",
+      "authors": "Herlock Rahimi",
+      "venue": "arXiv preprint arXiv:2512.17878",
+      "year": 2025,
+      "citations": 0,
+      "cited_by_url": null,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YnERbZYAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=YnERbZYAAAAJ:9yKSN-GCB0IC",
+      "arxiv_id": "2512.17878",
+      "url": "https://arxiv.org/abs/2512.17878",
+      "pdf_url": "https://arxiv.org/pdf/2512.17878"
+    },
+    {
+      "title": "Uncertainty-Aware Generative Oversampling Using an Entropy-Guided Conditional Variational Autoencoder",
+      "authors": "Amirhossein Zare, Amirhessam Zare, Parmida Sadat Pezeshki, Herlock Rahimi, Ali Ebrahimi, Ignacio Vázquez-García, Leo Anthony Celi",
+      "venue": "arXiv preprint arXiv:2509.25334",
+      "year": 2025,
+      "citations": 4,
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12411942158303331813",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YnERbZYAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=YnERbZYAAAAJ:d1gkVwhDpl0C",
+      "arxiv_id": "2509.25334",
+      "url": "https://arxiv.org/abs/2509.25334",
+      "pdf_url": "https://arxiv.org/pdf/2509.25334"
+    },
+    {
+      "title": "FedAVOT: Exact Distribution Alignment in Federated Learning via Masked Optimal Transport",
+      "authors": "Herlock Rahimi, Dionysis Kalogerias",
+      "venue": "arXiv preprint arXiv:2509.14444",
+      "year": 2025,
+      "citations": 2,
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8051721594529874740,16023163280053397681",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YnERbZYAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=YnERbZYAAAAJ:u-x6o8ySG0sC",
+      "arxiv_id": "2509.14444",
+      "url": "https://arxiv.org/abs/2509.14444",
+      "pdf_url": "https://arxiv.org/pdf/2509.14444"
+    },
+    {
+      "title": "Convergence of Agnostic Federated Averaging",
+      "authors": "Herlock Rahimi, Dionysis Kalogerias",
+      "venue": "arXiv preprint arXiv:2507.10325",
+      "year": 2025,
+      "citations": 3,
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16081926941257006913",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YnERbZYAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=YnERbZYAAAAJ:u5HHmVD_uO8C",
+      "arxiv_id": "2507.10325",
+      "url": "https://arxiv.org/abs/2507.10325",
+      "pdf_url": "https://arxiv.org/pdf/2507.10325"
+    }
+  ]
+}

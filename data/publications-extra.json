@@ -1,0 +1,31 @@
+{
+  "_readme": "Hand-curated highlights merged into the auto-fetched Google Scholar list. Key each entry by arXiv ID (or the exact paper title). Fields: venue (replaces 'Preprint'), tags, awards, note, code, slides. Papers not listed here still appear automatically.",
+  "2507.10325": {
+    "venue": "IEEE CAMSAP 2025",
+    "awards": ["Student Best Paper Finalist"],
+    "tags": ["Federated Learning", "Theory"],
+    "note": "Introduces client availability into the federated learning paradigm and proves convergence of agnostic FedAvg at rate O(1/√T)."
+  },
+  "2509.14444": {
+    "venue": "ICASSP 2026",
+    "tags": ["Federated Learning", "Optimal Transport"],
+    "note": "Transport-based aggregation that aligns availability and importance distributions via masked OT and Sinkhorn scaling, with convergence guarantees in nonsmooth convex settings and strong gains in low-availability regimes."
+  },
+  "2512.17878": {
+    "tags": ["Information Geometry", "Optimal Transport", "Sampling"],
+    "note": "Where optimal transport meets information geometry: a weighted SDE that implements Wasserstein–Fisher–Rao gradient flow for faster sampling."
+  },
+  "2509.25334": {
+    "tags": ["Generative Models", "Biomedical ML"],
+    "note": "Entropy-guided weighting and sampling for CVAE oversampling (LEO-CVAE), improving on SMOTE-style and generative baselines on ADNI and TCGA lung cancer data."
+  },
+  "2609.21057": {
+    "tags": ["Federated Learning", "Theory"]
+  },
+  "2608.08414": {
+    "tags": ["Constrained Learning", "Duality"]
+  },
+  "2606.05797": {
+    "tags": ["Causal Inference", "Biomedical ML"]
+  }
+}

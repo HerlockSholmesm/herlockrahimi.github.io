@@ -2,126 +2,131 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
-  <meta name="color-scheme" content="dark" />
-  <meta name="theme-color" content="#0d1117" />
-  <title>Service | Herlock Rahimi</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teaching &amp; Service · Herlock Rahimi</title>
+  <meta name="description" content="Teaching and service by Herlock Rahimi." />
+  <meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0d1015" media="(prefers-color-scheme: dark)" />
+  <meta property="og:title" content="Herlock Rahimi" />
+  <meta property="og:description" content="Ph.D. Candidate, Electrical & Computer Engineering, Yale University" />
+  <meta property="og:image" content="assets/profile.jpeg" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Header with pinned avatar (matches the other pages) -->
-  <header class="site-header avatar-inline">
-    <div class="container identity" aria-label="Intro">
-      <div>
-        <h1>Herlock Rahimi</h1>
-        <p>PhD Student in Electrical &amp; Computer Engineering, Yale University</p>
-        <div class="icons" aria-label="Quick links">
-          <a href="mailto:herlock.rahimi@yale.edu" aria-label="Email">📧 Email</a>
-          <a href="https://github.com/HerlockSholmesm" target="_blank" rel="noopener" aria-label="GitHub">💻 GitHub</a>
-          <a href="assets/CV.pdf" target="_blank" rel="noopener" aria-label="CV">📄 CV</a>
-        </div>
-      </div>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-      <!-- Avatar sits to the RIGHT, flush with container edge -->
-      <div class="profile-wrap">
-        <img src="assets/profile.jpeg" alt="Portrait of Herlock Rahimi" class="profile" />
-      </div>
+  <header class="site-header">
+    <div class="container bar">
+      <a class="brand" href="index.html">Herlock Rahimi</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">About</a>
+        <a href="publications.html">Publications</a>
+        <a href="news.html">News</a>
+        <a href="service.html" aria-current="page">Teaching &amp; Service</a>
+        <a href="assets/CV.pdf" target="_blank" rel="noopener">CV</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
     </div>
   </header>
 
-  <!-- Minimal Nav -->
-  <nav class="navbar" aria-label="Primary">
-    <div class="container nav">
-      <a href="bio.html" class="active">Bio</a>
-      <a href="publications.html">Publications</a>
-      <a href="news.html">News</a>
-      <a href="service.html">Service</a>
-    </div>
-  </nav>
-
   <main class="container" id="main">
-    <!-- Service -->
-    <section aria-labelledby="service">
-      <h2 id="service">Service</h2>
+    <header class="page-head">
+      <span class="eyebrow">Community</span>
+      <h1>Teaching &amp; Service</h1>
+      <p>Courses I have taught and supported, and service to the research community.</p>
+    </header>
 
-      <h3>Reviewer</h3>
-      <ul class="clean">
-        <li>▶ Reliable ML from Unreliable Data Workshop @ NeurIPS 2025</li>
-      </ul>
+    <section class="section" aria-labelledby="teaching">
+      <div class="section-label"><h2 id="teaching">Teaching</h2></div>
+      <div>
+        <h3 class="subhead">Yale University</h3>
+        <ul class="teach">
+          <li><span class="course">S&amp;DS 6690: Statistical Learning Theory</span><span class="term">Fall 2025</span></li>
+          <li><span class="course">Information Geometry<span class="role-tag">Instructor</span><span class="where"><a href="https://herlocksholmesm.github.io/information-geometry-course/" target="_blank" rel="noopener">Course website ↗</a></span></span><span class="term">Spring 2025</span></li>
+          <li><span class="course">S&amp;DS 317/517: Applied Machine Learning &amp; Causal Inference</span><span class="term">Spring 2025</span></li>
+          <li><span class="course">CPSC 483/683: Deep Learning on Graph-Structured Data</span><span class="term">Fall 2024</span></li>
+        </ul>
 
-      <h3>Professional &amp; Outreach</h3>
-      <ul class="clean">
-        <li>
-          <strong>AI Med</strong>, Tehran, Iran — <em>Researcher &amp; Data Scientist</em><br />
-          <small>Jun 2022 – Sep 2022</small><br />
-          Developed models for breast cancer detection from medical imaging.
-        </li>
-        <li>
-          <strong>Irysc Co.</strong>, Tehran, Iran — <em>Math &amp; Informatics Olympiad Teacher</em><br />
-          <small>Jun 2019 – Jun 2020</small><br />
-          Taught Combinatorics, Geometry, and Number Theory; authored practice and exam questions.
-        </li>
-        <li>
-          <strong>Winter Seminar Series (WSS)</strong>, Sharif University of Technology, Tehran, Iran<br />
-          5th WSS, participant (Winter 2020) · 6th WSS, Presentation Management (Winter 2021) · 7th WSS, participant (Winter 2022)
-        </li>
-        <li>
-          <strong>3rd Cognitive Neuroscience Contest (Sadra)</strong>, Online — <small>Oct 2020 – Dec 2020</small><br />
-          Summarized and presented recent papers on decision-making in the brain.
-        </li>
-        <li>
-          <strong>Evolutionary Computation &amp; Biological Computations (Course)</strong>, Sharif University of Technology — <small>Oct 2020 – Dec 2020</small><br />
-          Participated in interdisciplinary research schools focused on computational neuroscience.
-        </li>
-      </ul>
+        <h3 class="subhead">Sharif University of Technology</h3>
+        <ul class="teach">
+          <li><span class="course">Machine Learning Theory</span><span class="term">Spring 2023</span></li>
+          <li><span class="course">High Dimensional Probability</span><span class="term">Spring 2022</span></li>
+          <li><span class="course">Artificial Intelligence<span class="role-tag">Head TA</span></span><span class="term">Spring 2022</span></li>
+          <li><span class="course">Compiler Design</span><span class="term">Fall 2021</span></li>
+          <li><span class="course">Machine Learning</span><span class="term">Fall 2021</span></li>
+          <li><span class="course">Introduction to Bioinformatics</span><span class="term">Fall 2021</span></li>
+          <li><span class="course">Game Theory</span><span class="term">Fall 2021</span></li>
+          <li><span class="course">Design of Algorithms</span><span class="term">Fall 2021</span></li>
+          <li><span class="course">Linear Algebra</span><span class="term">Fall 2020, Spring 2021</span></li>
+          <li><span class="course">Artificial Intelligence</span><span class="term">Spring 2021</span></li>
+          <li><span class="course">General Math I</span><span class="term">Fall 2020</span></li>
+        </ul>
+      </div>
     </section>
 
-    <!-- Teaching -->
-    <section aria-labelledby="teaching">
-      <h2 id="teaching">Teaching</h2>
+    <section class="section" aria-labelledby="reviewing">
+      <div class="section-label"><h2 id="reviewing">Reviewing</h2></div>
+      <div>
+        <ul class="entries">
+          <li class="entry">
+            <div class="entry-head"><span class="entry-title">Reliable ML from Unreliable Data Workshop</span><span class="entry-when">NeurIPS 2025</span></div>
+            <p class="entry-sub">Reviewer</p>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-      <!-- Short list (narrative) -->
-      <ul class="clean">
-        <li><strong>S&amp;DS 6690: Statistical Learning Theory (Yale)</strong> — Fall 2025</li>
-        <li>
-          <strong>Information Geometry (Yale, Instructor)</strong> — Spring 2025
-          &nbsp;|&nbsp;
-          <a href="https://herlocksholmesm.github.io/information-geometry-course/" target="_blank" rel="noopener">Course Website ↗</a>
-        </li>
-        <li><strong>S&amp;DS 317/517: Applied Machine Learning &amp; Causal Inference (Yale)</strong> — Spring 2025</li>
-        <li><strong>CPSC 483/683: Deep Learning on Graph-Structured Data (Yale)</strong> — Fall 2024</li>
-        <li><strong>Machine Learning Theory (Sharif University of Technology)</strong> — Spring 2023</li>
-        <li><strong>High Dimensional Probability (Sharif University of Technology)</strong> — Spring 2022</li>
-        <li><strong>Artificial Intelligence (Head TA, Sharif University of Technology)</strong> — Spring 2022</li>
-        <li><strong>Compiler Design (Sharif University of Technology)</strong> — Fall 2021</li>
-        <li><strong>Machine Learning (Sharif University of Technology)</strong> — Fall 2021</li>
-        <li><strong>Introduction to Bioinformatics (Sharif University of Technology)</strong> — Fall 2021</li>
-        <li><strong>Game Theory (Sharif University of Technology)</strong> — Fall 2021</li>
-        <li><strong>Design of Algorithms (Sharif University of Technology)</strong> — Fall 2021</li>
-        <li><strong>Linear Algebra (Sharif University of Technology)</strong> — Spring 2021; Fall 2020</li>
-        <li><strong>Artificial Intelligence (Sharif University of Technology)</strong> — Spring 2021</li>
-        <li><strong>General Math I (Sharif University of Technology)</strong> — Fall 2020</li>
-      </ul>
-
-      
+    <section class="section" aria-labelledby="experience">
+      <div class="section-label"><h2 id="experience">Experience &amp; Outreach</h2></div>
+      <div>
+        <ul class="entries">
+          <li class="entry">
+            <div class="entry-head"><span class="entry-title">AI Med, Tehran</span><span class="entry-when">Jun – Sep 2022</span></div>
+            <p class="entry-sub">Researcher &amp; Data Scientist</p>
+            <p>Developed models for breast cancer detection from medical imaging.</p>
+          </li>
+          <li class="entry">
+            <div class="entry-head"><span class="entry-title">Irysc Co., Tehran</span><span class="entry-when">Jun 2019 – Jun 2020</span></div>
+            <p class="entry-sub">Math &amp; Informatics Olympiad Teacher</p>
+            <p>Taught combinatorics, geometry, and number theory; authored practice and exam problems.</p>
+          </li>
+          <li class="entry">
+            <div class="entry-head"><span class="entry-title">Winter Seminar Series (WSS), Sharif University of Technology</span><span class="entry-when">2020 – 2022</span></div>
+            <p class="entry-sub">Presentation Management, 6th WSS (2021) · Participant, 5th &amp; 7th WSS (2020, 2022)</p>
+          </li>
+          <li class="entry">
+            <div class="entry-head"><span class="entry-title">3rd Cognitive Neuroscience Contest (Sadra)</span><span class="entry-when">Oct – Dec 2020</span></div>
+            <p>Summarized and presented recent papers on decision-making in the brain.</p>
+          </li>
+          <li class="entry">
+            <div class="entry-head"><span class="entry-title">Evolutionary &amp; Biological Computation, Sharif University of Technology</span><span class="entry-when">Oct – Dec 2020</span></div>
+            <p>Participated in interdisciplinary research schools focused on computational neuroscience.</p>
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
 
-  <!-- Professional footer (prevents empty bottom feel) -->
   <footer class="site-footer">
     <div class="container foot">
-      <div>© 2025 <strong>Herlock Rahimi</strong></div>
-      <div>
-        <a href="mailto:herlock.rahimi@yale.edu">Email</a> ·
-        <a href="https://github.com/HerlockSholmesm" target="_blank" rel="noopener">GitHub</a> ·
+      <div>© 2026 Herlock Rahimi · Yale University</div>
+      <nav aria-label="Footer">
+        <a href="mailto:herlock.rahimi@yale.edu">Email</a>
+        <a href="https://scholar.google.com/citations?user=YnERbZYAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://github.com/HerlockSholmesm" target="_blank" rel="noopener">GitHub</a>
         <a href="assets/CV.pdf" target="_blank" rel="noopener">CV</a>
-      </div>
+      </nav>
     </div>
   </footer>
+
+  <script src="site.js"></script>
 </body>
 </html>
