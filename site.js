@@ -68,12 +68,6 @@
     if (p.code) links.push('<a href="' + esc(p.code) + '" target="_blank" rel="noopener">Code</a>');
     if (p.slides) links.push('<a href="' + esc(p.slides) + '" target="_blank" rel="noopener">Slides</a>');
     if (p.scholar_url) links.push('<a href="' + esc(p.scholar_url) + '" target="_blank" rel="noopener">Scholar</a>');
-    if (p.citations > 0) {
-      var label = "Cited by " + p.citations;
-      links.push(p.cited_by_url
-        ? '<a class="cites" href="' + esc(p.cited_by_url) + '" target="_blank" rel="noopener">' + label + "</a>"
-        : '<span class="cites">' + label + "</span>");
-    }
 
     return '<li class="pub">' +
       '<h3 class="pub-title">' + title + "</h3>" +
@@ -114,18 +108,6 @@
   var full = document.getElementById("pub-root");
   if (full) {
     loadPublications().then(function (res) {
-      var s = res.data.stats || {};
-      var meta = document.getElementById("scholar-meta");
-      if (meta) {
-        meta.innerHTML =
-          '<span class="stat"><strong>' + res.pubs.length + "</strong>papers</span>" +
-          '<span class="stat"><strong>' + (s.citations || 0) + "</strong>citations</span>" +
-          '<span class="stat"><strong>' + (s.h_index || 0) + "</strong>h-index</span>" +
-          '<span class="src">Synced from <a href="' + esc(res.data.profile_url) +
-          '" target="_blank" rel="noopener">Google Scholar</a> · ' + esc(res.data.updated) + "</span>";
-        meta.hidden = false;
-      }
-
       var tagSet = {};
       res.pubs.forEach(function (p) { p.tags.forEach(function (t) { tagSet[t] = (tagSet[t] || 0) + 1; }); });
       var tags = Object.keys(tagSet).sort(function (a, b) { return tagSet[b] - tagSet[a] || a.localeCompare(b); });

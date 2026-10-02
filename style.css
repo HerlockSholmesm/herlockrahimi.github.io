@@ -223,7 +223,7 @@ main { padding: 56px 0 96px; }
   .hero { grid-template-columns: 1fr; gap: 32px; padding-top: 8px; }
   .portrait { order: -1; justify-self: start; max-width: 168px; }
   .portrait::before { inset: 8px -8px -8px 8px; border-radius: 18px; }
-  .portrait img { aspect-ratio: 1; border-radius: 18px; }
+  .portrait img { aspect-ratio: 1; border-radius: 18px; object-position: 50% 12%; }
 }
 
 .links { display: flex; flex-wrap: wrap; gap: 10px; }
@@ -260,16 +260,6 @@ main { padding: 56px 0 96px; }
 .interest p { font-size: 15px; margin: 0; color: var(--muted); line-height: 1.6; }
 
 /* ====== Publications ====== */
-.scholar-meta {
-  display: flex; flex-wrap: wrap; align-items: center; gap: 10px 22px;
-  padding: 14px 18px; margin-bottom: 28px;
-  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
-  font-size: 14px; color: var(--muted);
-}
-.scholar-meta .stat strong { font-family: var(--serif); font-size: 22px; font-weight: 500; margin-right: 6px; color: var(--text); }
-.scholar-meta .src { margin-left: auto; }
-@media (max-width: 600px) { .scholar-meta .src { margin-left: 0; width: 100%; } }
-
 .pub-tools { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 8px; }
 .search {
   flex: 1 1 240px; min-width: 0;
@@ -320,7 +310,6 @@ main { padding: 56px 0 96px; }
 .tag.award::before { content: "★ "; }
 .pub-links { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 14px; font-size: 14px; font-weight: 500; }
 .pub-links a { display: inline-flex; align-items: center; gap: 5px; }
-.pub-links .cites { color: var(--muted); font-weight: 400; }
 
 .empty, .loading { color: var(--muted); padding: 24px 0; }
 .loading::before {
