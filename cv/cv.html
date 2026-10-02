@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Herlock Rahimi — CV</title>
+<!-- Source for assets/CV.pdf. Rebuild with: node cv/build.mjs -->
+<link rel="stylesheet" href="fonts.css" />
+<style>
+  @page { size: Letter; margin: 0.48in 0.55in; }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    margin: 0; color: #1a1a1a; background: #fff;
+    font-family: "Source Serif 4", "Bitstream Charter", Charter, Georgia, serif;
+    font-size: 9.9pt; line-height: 1.28;
+  }
+  a { color: inherit; text-decoration: none; }
+  .accent { color: #1f3a68; }
+
+  header { text-align: center; margin-bottom: 8pt; }
+  header h1 { font-size: 21pt; font-weight: 700; margin: 0; letter-spacing: 0.02em; color: #1f3a68; }
+  header .title { font-size: 10.8pt; margin: 2pt 0 3pt; }
+  header .contact { font-size: 9.4pt; }
+  header .contact span + span::before { content: "·"; margin: 0 6pt; color: #888; }
+  header .contact a { border-bottom: 0.5pt solid #b8c2d6; }
+
+  section { margin-top: 7pt; }
+  h2 {
+    font-size: 10.6pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;
+    color: #1f3a68; margin: 0 0 3pt; padding-bottom: 1.5pt; border-bottom: 0.8pt solid #1f3a68;
+  }
+  .summary { margin: 0; }
+
+  .entry { margin-top: 4pt; break-inside: avoid; }
+  .row { display: flex; justify-content: space-between; align-items: baseline; gap: 12pt; }
+  .row .l { font-weight: 600; }
+  .row .r { white-space: nowrap; font-size: 9.6pt; color: #333; }
+  .sub { font-style: italic; }
+  ul { margin: 1.5pt 0 0; padding-left: 13pt; }
+  li { margin: 0.8pt 0; }
+  li::marker { color: #1f3a68; }
+
+  ol.pubs { margin: 2pt 0 0; padding-left: 17pt; }
+  ol.pubs li { margin: 2.2pt 0; }
+  .me { font-weight: 700; }
+  .venue { font-style: italic; }
+  .hl { color: #8a2b0e; font-weight: 600; }
+
+  .skills { display: grid; grid-template-columns: 1.25in 1fr; gap: 1.5pt 8pt; margin-top: 2pt; }
+  .skills dt { font-weight: 600; }
+  .skills dd { margin: 0; }
+
+  .compact li { margin: 0.5pt 0; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Herlock Rahimi</h1>
+  <div class="title">Ph.D. Candidate, Electrical &amp; Computer Engineering, Yale University</div>
+  <div class="contact">
+    <span>New Haven, CT</span>
+    <span><a href="mailto:herlock.rahimi@yale.edu">herlock.rahimi@yale.edu</a></span>
+    <span><a href="https://herlocksholmesm.github.io/herlockrahimi.github.io/">Website</a></span>
+    <span><a href="https://scholar.google.com/citations?user=YnERbZYAAAAJ&amp;hl=en">Google Scholar</a></span>
+    <span><a href="https://github.com/HerlockSholmesm">GitHub</a></span>
+    <span><a href="https://www.linkedin.com/in/herlock-rahimi-ab463a192">LinkedIn</a></span>
+  </div>
+</header>
+
+<section>
+  <h2>Summary</h2>
+  <p class="summary">
+    Ph.D. candidate in machine learning and optimization, seeking a <strong>research internship</strong>.
+    I design learning algorithms with provable guarantees and implement them in PyTorch: federated and distributed
+    learning under heterogeneous, partially available clients; distributionally robust and constrained learning;
+    and optimal-transport and gradient-flow methods for sampling and generative modeling. Seven papers and preprints,
+    including <strong>ICASSP 2026</strong> and <strong>IEEE CAMSAP 2025</strong> (Student Best Paper Finalist).
+    Strong mathematical background (dual B.Sc. in Computer Engineering and Pure Mathematics; national olympiad medalist).
+  </p>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <div class="entry">
+    <div class="row"><span class="l">Yale University</span><span class="r">New Haven, CT</span></div>
+    <div class="row"><span class="sub">Ph.D. in Electrical &amp; Computer Engineering (Ph.D. Candidate since Nov 2025)</span><span class="r">2023 – Present</span></div>
+    <div class="row"><span class="sub">M.Phil. (May 2026) · M.Sc. (Mar 2025), Electrical &amp; Computer Engineering</span><span class="r"></span></div>
+    <div>Advisors: Dionysis Kalogerias, Amin Karbasi · Graduate Top-Up Fellowship for highest overall coursework GPA (2023, 2024)</div>
+  </div>
+  <div class="entry">
+    <div class="row"><span class="l">Sharif University of Technology</span><span class="r">Tehran, Iran</span></div>
+    <div class="row"><span class="sub">B.Sc. in Computer Engineering (GPA 19.01/20) &amp; B.Sc. in Pure Mathematics (GPA 19.34/20)</span><span class="r">2018 – 2023</span></div>
+    <div>Top 10% of graduating class</div>
+  </div>
+</section>
+
+<section>
+  <h2>Research Experience</h2>
+
+  <div class="entry">
+    <div class="row"><span class="l">Federated Learning under Client Availability &amp; Drift</span><span class="r">Yale University · 2024 – Present</span></div>
+    <div class="sub">Advisor: Dionysis Kalogerias</div>
+    <ul>
+      <li>Proved the first convergence guarantee for <strong>Agnostic FedAvg</strong> under random, non-uniform client availability, at rate O(1/√T) without knowledge of the participation distribution (IEEE CAMSAP 2025, Best Student Paper Finalist).</li>
+      <li>Designed <strong>FedAVOT</strong>, an aggregation rule that casts federated averaging as masked optimal transport between availability and importance distributions, solved by Sinkhorn scaling; proved convergence and showed large gains in low-availability regimes (ICASSP 2026).</li>
+      <li>Developed <strong>FedeRage</strong>, a provably convergent agnostic FL method under general client drift; extended the framework to risk-averse FL with CVaR and distributionally robust objectives.</li>
+      <li>Built PyTorch and cvxpy simulation pipelines for heterogeneous, non-IID federated environments.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row"><span class="l">Constrained Learning, Duality &amp; Sampling Dynamics</span><span class="r">Yale University · 2024 – Present</span></div>
+    <ul>
+      <li>Showed when Lagrangian (primal–dual) training is justified for constrained learning (fairness, safety, risk constraints) beyond convexity, via zero duality gap for universally learnable concept classes.</li>
+      <li>Sole-authored a weighted SDE that implements the <strong>Wasserstein–Fisher–Rao gradient flow</strong>, coupling optimal transport and information geometry for faster sampling (Yale AI Symposium lightning talk).</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row"><span class="l">Reasoning in Large Language Models</span><span class="r">Yale University</span></div>
+    <div class="sub">With Amin Karbasi and Zhuoran Yang</div>
+    <ul>
+      <li>Studying chain-of-thought reliability, search-augmented inference, and curriculum-based alignment; developing evaluation protocols for structured reasoning and compositional generalization.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row"><span class="l">Generative &amp; Causal Models for Biomedical Data</span><span class="r">Collaborative projects · 2025 – 2026</span></div>
+    <ul>
+      <li>LEO-CVAE: entropy-guided loss weighting and uncertainty-aware sampling for conditional VAE oversampling; outperformed SMOTE-style and generative baselines on ADNI and TCGA lung-cancer data.</li>
+      <li>Causal longitudinal prior-fitted networks (transformer-based) for counterfactual outcome prediction.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row"><span class="l">Undergraduate Research</span><span class="r">Sharif University of Technology · 2020 – 2023</span></div>
+    <ul class="compact">
+      <li>Attention-based reinforcement learning agents for visual question answering (with H. Rabiee).</li>
+      <li>Graph neural networks for histopathology classification with robustness and explainability (with M. H. Rohban).</li>
+      <li>B.Sc. thesis: symmetry-invariant representation learning inspired by supersymmetry (with M. H. Rohban).</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Industry Experience</h2>
+  <div class="entry">
+    <div class="row"><span class="l">Research Intern / Data Scientist, AI Med</span><span class="r">Tehran, Iran · Jun – Sep 2022</span></div>
+    <ul>
+      <li>Developed and evaluated deep learning models for breast-cancer detection from histopathology images using real hospital data (Imam Khomeini Hospital); built attention-based CNN classifiers with explainability metrics.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Publications &amp; Preprints</h2>
+  <ol class="pubs">
+    <li><span class="me">H. Rahimi</span>, D. Kalogerias. FedeRage: Provably Convergent Agnostic Federated Learning under General Client Drift. <span class="venue">arXiv:2609.21057</span>, 2026.</li>
+    <li><span class="me">H. Rahimi</span>, S. Pougkakiotis, D. Kalogerias. Constrained Learning with Universally Learnable Concept Classes. <span class="venue">arXiv:2608.08414</span>, 2026.</li>
+    <li>A. Zare, A. Zare, <span class="me">H. Rahimi</span>, R. Salarikia, M. Kashkooli. Causal Longitudinal Prior-Fitted Networks for Counterfactual Outcome Prediction. <span class="venue">arXiv:2606.05797</span>, 2026.</li>
+    <li><span class="me">H. Rahimi</span>, D. Kalogerias. FedAVOT: Exact Distribution Alignment in Federated Learning via Masked Optimal Transport. <span class="venue">IEEE ICASSP</span>, 2026.</li>
+    <li><span class="me">H. Rahimi</span>. Weighted Stochastic Differential Equation to Implement Wasserstein–Fisher–Rao Gradient Flow. <span class="venue">arXiv:2512.17878</span>, 2025.</li>
+    <li>A. Zare, A. Zare, P. S. Pezeshki, <span class="me">H. Rahimi</span>, A. Ebrahimi, I. Vázquez-García, L. A. Celi. Uncertainty-Aware Generative Oversampling Using an Entropy-Guided Conditional Variational Autoencoder. <span class="venue">arXiv:2509.25334</span>, 2025.</li>
+    <li><span class="me">H. Rahimi</span>, D. Kalogerias. Convergence of Agnostic Federated Averaging. <span class="venue">IEEE CAMSAP</span>, 2025. <span class="hl">Student Best Paper Finalist.</span></li>
+  </ol>
+</section>
+
+<section>
+  <h2>Technical Skills</h2>
+  <dl class="skills">
+    <dt>Programming</dt><dd>Python (PyTorch, TensorFlow, cvxpy), C++, Java, Julia, R, SQL, MongoDB, Bash, Git</dd>
+    <dt>Machine Learning</dt><dd>Federated &amp; distributed learning, generative models (VAEs, diffusion), graph neural networks, reinforcement learning, LLM reasoning &amp; evaluation, causal inference</dd>
+    <dt>Mathematics</dt><dd>Convex &amp; nonconvex optimization, stochastic approximation, duality, optimal transport, information geometry, statistical learning theory, high-dimensional probability</dd>
+  </dl>
+</section>
+
+<section>
+  <h2>Honors &amp; Talks</h2>
+  <ul class="compact">
+    <li>Student Best Paper Finalist, IEEE CAMSAP 2025.</li>
+    <li>Talks: Yale AI Symposium lightning talk (2026); AI Symposium, Hartford (2026); IEEE CAMSAP (2025).</li>
+    <li>Graduate Top-Up Fellowship, Yale University (2023, 2024).</li>
+    <li>Top-3 Finalist, Iranian National Mathematics Olympiad for College Students (2022) and Statistics Olympiad (2021).</li>
+    <li>Ranked 9th nationwide, Iranian University Entrance Exam (2018); Silver Medal, Iranian National Mathematical Olympiad (2017).</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Teaching &amp; Service</h2>
+  <ul class="compact">
+    <li><strong>Instructor:</strong> Information Geometry (Yale, 2025); Chaos, Fractals, and Noise (Yale, 2026); online Machine Learning course (Sharif, 100+ students).</li>
+    <li><strong>Teaching Assistant, Yale:</strong> Advanced Stochastic Processes, Statistical Learning Theory, Applied ML &amp; Causal Inference, Deep Learning on Graph-Structured Data, Intro to Computer Engineering.</li>
+    <li><strong>Teaching Assistant, Sharif:</strong> 10+ courses incl. ML Theory, High-Dimensional Probability, Artificial Intelligence (Head TA), Algorithms, Compilers.</li>
+    <li><strong>Reviewer:</strong> NeurIPS 2025 Workshop on Reliable ML from Unreliable Data.</li>
+    <li><strong>Languages:</strong> English (fluent), Persian (native).</li>
+  </ul>
+</section>
+
+</body>
+</html>

@@ -25,6 +25,15 @@ Google Scholar occasionally blocks requests from GitHub's servers. If the
 workflow logs a warning about that, add a free [SerpAPI](https://serpapi.com)
 key as a repository secret named `SERPAPI_KEY` and it will be used as a fallback.
 
+## CV
+
+`assets/CV.pdf` (the internship CV linked from every page) is generated from
+`cv/cv.html`. Edit the HTML, then rebuild the PDF:
+
+    npm install playwright && node cv/build.mjs
+
+The previous academic CV is kept at `assets/CV_academic.pdf`.
+
 ## Preview locally
 
     python3 -m http.server 8000   # then open http://localhost:8000
