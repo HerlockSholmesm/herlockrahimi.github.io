@@ -105,6 +105,8 @@
       <li>Proved the first convergence guarantee for <strong>Agnostic FedAvg</strong> under random, non-uniform client availability, at rate O(1/√T) without knowledge of the participation distribution (IEEE CAMSAP 2025, Best Student Paper Finalist).</li>
       <li>Designed <strong>FedAVOT</strong>, an aggregation rule that casts federated averaging as masked optimal transport between availability and importance distributions, solved by Sinkhorn scaling; proved convergence and showed large gains in low-availability regimes (ICASSP 2026).</li>
       <li>Developed <strong>FedeRage</strong>, a provably convergent agnostic FL method under general client drift; extended the framework to risk-averse FL with CVaR and distributionally robust objectives.</li>
+      <li>Co-developed <strong>GAVOT</strong>, combining optimal transport and robust aggregation for fair federated training; closed 52–64% of the fairness gap on Adult and IMDb-Wiki.</li>
+      <li>Current work: <strong>personalized federated learning with a performance guarantee for every client</strong>, posed as a feasibility problem in which each region meets its own risk requirement while borrowing strength from the federation.</li>
       <li>Built PyTorch and cvxpy simulation pipelines for heterogeneous, non-IID federated environments.</li>
     </ul>
   </div>
@@ -112,7 +114,7 @@
   <div class="entry">
     <div class="row"><span class="l">Constrained Learning, Duality &amp; Sampling Dynamics</span><span class="r">Yale University · 2024 – Present</span></div>
     <ul>
-      <li>Showed when Lagrangian (primal–dual) training is justified for constrained learning (fairness, safety, risk constraints) beyond convexity, via zero duality gap for universally learnable concept classes.</li>
+      <li>Showed when Lagrangian (primal–dual) training is justified for constrained learning (fairness, safety, risk constraints) beyond convexity, via zero duality gap for universally learnable concept classes (journal version in preparation for JMLR); extending it to exact-penalty training and Wasserstein-robust constraints.</li>
       <li>Sole-authored a weighted SDE that implements the <strong>Wasserstein–Fisher–Rao gradient flow</strong>, coupling optimal transport and information geometry for faster sampling (Yale AI Symposium lightning talk).</li>
     </ul>
   </div>
@@ -146,7 +148,7 @@
 <section>
   <h2>Publications &amp; Preprints</h2>
   <ol class="pubs">
-    <li><span class="me">H. Rahimi</span>, D. Kalogerias. FedeRage: Provably Convergent Agnostic Federated Learning under General Client Drift. <span class="venue">arXiv:2609.21057</span>, 2026.</li>
+    <li><span class="me">H. Rahimi</span>, D. Kalogerias. FedeRage: Provably Convergent Agnostic Federated Learning under General Client Drift. Submitted to <span class="venue">IEEE Transactions on Signal Processing</span>; arXiv:2609.21057, 2026.</li>
     <li><span class="me">H. Rahimi</span>, S. Pougkakiotis, D. Kalogerias. Constrained Learning with Universally Learnable Concept Classes. <span class="venue">arXiv:2608.08414</span>, 2026.</li>
     <li>A. Zare, A. Zare, <span class="me">H. Rahimi</span>, R. Salarikia, M. Kashkooli. Causal Longitudinal Prior-Fitted Networks for Counterfactual Outcome Prediction. <span class="venue">arXiv:2606.05797</span>, 2026.</li>
     <li><span class="me">H. Rahimi</span>, D. Kalogerias. FedAVOT: Exact Distribution Alignment in Federated Learning via Masked Optimal Transport. <span class="venue">IEEE ICASSP</span>, 2026.</li>
@@ -162,6 +164,7 @@
     <dt>Programming</dt><dd>Python (PyTorch, TensorFlow, cvxpy), C++, Java, Julia, R, SQL, MongoDB, Bash, Git</dd>
     <dt>Machine Learning</dt><dd>Federated &amp; distributed learning, generative models (VAEs, diffusion), graph neural networks, reinforcement learning, LLM reasoning &amp; evaluation, causal inference</dd>
     <dt>Mathematics</dt><dd>Convex &amp; nonconvex optimization, stochastic approximation, duality, optimal transport, information geometry, statistical learning theory, high-dimensional probability</dd>
+    <dt>Coursework</dt><dd>Measure theory, functional analysis, manifolds, high-dimensional statistics, stochastic processes, stochastic optimization &amp; duality, SPDEs</dd>
   </dl>
 </section>
 
